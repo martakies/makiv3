@@ -1,0 +1,21 @@
+
+.dienst-wrap
+  figure
+    margin: 20px
+    position: relative
+    opacity: 0
+    transform: translateX(-20px) translateY(-20px)
+    transition: all 0.7s ease-in-out
+
+    &.is-showing
+      opacity: 1
+      transform: translateX(0px)
+
+@media screen and (max-width: 736px)
+  .dienst-wrap
+    max-width: 100%
+    margin: 0 auto
+    padding: 0px 10%
+
+    figure
+      margin: 0

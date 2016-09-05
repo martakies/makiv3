@@ -1,0 +1,33 @@
+<section>
+
+  <div class="form-wrap">
+
+    <h3 id="kontakt">Kontakt</h3>
+
+    <div class="social-links">
+      {% for link in site.data.settings.social %}
+      <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+      {% endfor %}
+    </div>
+
+
+      <form action="//formspree.io/marta.kieser@gmail.com"  method="POST">
+
+        <div class="contact-info">
+          <label><strong>Ihr Name</strong><br />
+          <input type="text" name="name"></label>
+
+          <label><strong>Ihre E-Mail</strong><br />
+          <input type="email" name="_replyto"></label>
+        </div>
+
+          <label><strong>Erzählen Sie mir von Ihrem Projekt</strong><br />
+          <textarea name="message"></textarea> </label>
+
+        <div class="submit-wrap">
+          <input type="submit" value="Senden">
+        </div>
+      </form>
+    </div>
+
+</section>

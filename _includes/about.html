@@ -1,0 +1,24 @@
+<section>
+
+  <h3 id="ueber-mich">Über mich</h3>
+
+  <div class="face-lockup">
+
+    <div class="face-img"></div>
+
+    <div class="icon-photoshop">{% include icons/photoshop.html %}</div>
+    <div class="icon-illustrator">{% include icons/illustrator.html %}</div>
+    <div class="icon-wordpress">{% include icons/wordpress.html %}</div>
+    <div class="icon-html">{% include icons/html.html %}</div>
+    <div class="icon-css">{% include icons/css.html %}</div>
+    <div class="icon-jq">{% include icons/jq.html %}</div>
+
+  </div>
+
+
+  <div class="blurb">
+    {{ site.data.settings.blurb | markdownify }}
+  </div>
+
+
+</section>

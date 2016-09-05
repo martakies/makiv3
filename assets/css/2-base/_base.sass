@@ -1,0 +1,178 @@
+/*	Typography presets
+  ------------------------------------	*/
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6
+  color: $headlineColor
+  font-weight: bold
+
+.gigantic
+  font-size: 110px
+  line-height: 1.09
+  letter-spacing: -2px
+
+.huge, h1
+  font-size: 68px
+  line-height: 1.05
+  letter-spacing: -1px
+
+.large, h2
+  font-size: 42px
+  line-height: 1.14
+
+.bigger, h3
+  font-size: 26px
+  line-height: 1.38
+
+.big, h4
+  font-size: 18px
+  line-height: 0.8
+
+.small, small
+  font-size: 10px
+  line-height: 1.2
+
+
+
+p
+  margin: 0 0 20px 0
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+
+
+
+/* Links
+  ------------------------------------	*/
+a
+  color: $accent
+  text-decoration: none
+  outline: 0
+
+a:hover, a:focus
+  color: lighten($accent, 20%)
+
+
+
+/* Selection colors (easy to forget)
+  ------------------------------------	*/
+
+::selection
+  background: $selectionColor
+
+::-moz-selection
+  background: $selectionColor
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: $selectionColor
+
+
+
+/* Basic Styles
+  ------------------------------------	*/
+html
+  height: 100%
+
+body
+  background: $documentBackgroundColor
+  height: 100%
+  font-size: 16px
+  line-height: 1.6
+  font-family: 'Open Sans' sans-serif
+  color: $textColor
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+svg
+  +size(100%)
+
+h3
+  @extend %small-bold
+  color: $accent-light
+  text-align: center
+  padding: 60px 0 30px
+
+fieldset
+  padding: 0
+  margin: 0
+  border: none
+
+.content
+  position: relative
+  z-index: 2
+  background: white
+  //margin-bottom: 140px
+
+@media screen and (max-width: 768px)
+  .content
+    margin-bottom: 0px
+
+@media screen and (max-width: 480px)
+  h3
+    padding: 50px 0 50px
+
+.cd-top
+  display: inline-block
+  height: 40px
+  width: 40px
+  position: fixed
+  bottom: 40px
+  left: 10px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05)
+  /* image replacement properties */
+  overflow: hidden
+  text-indent: 100%
+  white-space: nowrap
+  background: #ba1200 url(../img/cd-top-arrow.svg) no-repeat center 50%
+  border-radius: 50%
+  visibility: hidden
+  opacity: 0
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s
+  -moz-transition: opacity .3s 0s, visibility 0s .3s
+  transition: opacity .3s 0s, visibility 0s .3s
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s
+  -moz-transition: opacity .3s 0s, visibility 0s 0s
+  transition: opacity .3s 0s, visibility 0s 0s
+
+.cd-top.cd-is-visible
+  /* the button becomes visible */
+  visibility: visible
+  opacity: 1
+
+.cd-top.cd-fade-out
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: 0.8
+
+.no-touch .cd-top:hover
+  background-color: #ba1200
+  opacity: 1
+
+@media only screen and (min-width: 768px)
+  .cd-top
+    right: 20px
+    bottom: 20px
+
+@media only screen and (min-width: 1024px)
+  .cd-top
+    height: 60px
+    width: 60px
+    right: 30px
+    bottom: 30px

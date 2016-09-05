@@ -1,0 +1,18 @@
+# Layout settings
+
+animation: "bounceOut"
+
+# Images
+
+logo: "logo-maki.png"
+hero: "frankfurt-header.jpg"
+avatar: "about-me-img.png"
+
+# Colors
+
+accent: "#674D41"
+
+textColor: "#221500"
+headlineColor: "#674D41"
+bgcolor: "#fff"
+documentBackgroundColor: "#fff"

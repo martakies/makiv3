@@ -1,0 +1,21 @@
+<header class="bird-box">
+
+  <nav>
+    <ul>
+        {% for item in site.data.settings.menu %}
+          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
+    </ul>
+  </nav>
+
+  <a id="i-nav" href="#"></a>
+
+  <h1>{{ site.data.settings.title }}</h1>
+  <a href="/"><div class="logo"></div></a>
+  <p class="kicker">{{ site.data.settings.description }}<br /> WEBSITES</p>
+  <div class="blink-element">
+    <p class="head-trigger">Dienstleistungen</p>
+    <div id="flip"><a href="#dienstleistungen"><img src="assets/img/arrow-down-header.svg" class="arrow-header"></a></div>
+  </div>
+
+</header>
