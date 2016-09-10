@@ -1,20 +1,14 @@
-//header
-  @extend %background-image
-  background:
-    position: 30px 20px, 50% 50%
-    image: url(../img/#{$logo-path}), url(../img/#{$hero-path})
-  padding-bottom: 50px
-  z-index: 3
-
+header
   .logo
-    height: 100px
-    width: 100px
-    margin: 0 auto
+    +size(100px)
+    margin: 20px 0 0 30px
+    float: left
+    margin: 10px 0 0 30px
+    background-image: url(../img/logo-maki-sm.png)
 
   nav
     float: right
     padding: 30px 30px 0 0
-    font-size: 14px
 
     ul
       overflow: hidden
@@ -31,7 +25,6 @@
       margin: 0 10px
       list-style-type: none
       color: white
-      @extend %small-bold
 
       &:hover
         color: rgba(0,0,0,1)
@@ -65,6 +58,7 @@
     margin-bottom: 20px
     clear: both
     padding-top: 100px
+    line-height: 80px
 
 
     span
@@ -72,18 +66,58 @@
       padding: 0.2em 0.5em
 
   .kicker
-    @extend %small-bold
     text-align: center
     letter-spacing: 0.1em
     color: white
     line-height: 2.5
+    font-size: 24px
+
+.buttons-header
+  text-align: center
+
+.button-first
+  background-color: #EEA913
+  opacity: 0.7
+  border: 2px solid #4D3A2C
+  color: white
+  padding: 15px 32px
+  text-align: center
+  text-decoration: none
+  font-weight: bold
+  display: inline-block
+  font-size: 16px
+  margin: 5% 20px
+  cursor: pointer
+
+  &:hover
+    color: white
+    background-color: #EEA913
+    opacity: 1
+
+.button-second
+  background-color: none
+  border: 2px solid #EEA913
+  color: white
+  padding: 15px 32px
+  text-align: center
+  text-decoration: none
+  font-weight: bold
+  display: inline-block
+  font-size: 16px
+  margin: 5% 20px
+  cursor: pointer
+
+  &:hover
+    color: white
+    background-color: rgba(77,58,44,0.8)
 
 
-//@media (max-width: 736px)
+
+
+@media (max-width: 736px)
   header
     background:
       position: 50% 20px, 50% 50%
-
 
     nav
       float: none
@@ -123,14 +157,12 @@ header
 
   .logo
     background-image: url(../img/#{$logo-path})
-    height: 200px
-    width: 200px
-    margin: 0 auto
+    +size(100px)
 
   nav
     float: right
     padding: 30px 30px 0 0
-    font-size: 14px
+    font-size: 10px
 
     ul
       overflow: hidden
@@ -188,19 +220,20 @@ header
       padding: 0.2em 0.5em
 
   .kicker
-    @extend %small-bold
     text-align: center
     letter-spacing: 0.1em
     color: white
     line-height: 2.5
     padding-top: 30px
-    font-size: 18px
+    font-style: italic
+    font-size: 24px
 
   .head-trigger
     color: white
-    font-size: 18px
+    font-size: 15px
     font-weight: bold
-    padding: 30px 0 10px 0
+    padding: 5% 0 0 0
+    text-decoration: underline
 
 .blink-element
   position: absolute
@@ -212,10 +245,9 @@ header
   text-align: center
 
 .arrow-header
-  width: 80px
-  height: 80px
+  +size(30px)
   cursor: pointer
-  padding-bottom: 100px
+  padding-bottom: 5%
   -webkit-animation: blink 2s
   -webkit-animation-iteration-count: infinite
   -moz-animation: blink 2s
@@ -263,9 +295,7 @@ header
 
     .logo
       background-image: url(../img/logo-maki-sm.png)
-      height: 100px
-      width: 100px
-      margin: 0 auto
+      +size(100px)
 
     .kicker
       padding-top: 2%
@@ -319,6 +349,7 @@ header
     h1
       font-size: 22px
       padding-top: 10%
+      line-height: 20px
 
     .kicker
       color: white

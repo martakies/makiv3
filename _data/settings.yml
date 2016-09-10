@@ -2,14 +2,14 @@
 # General Site Settings
 
 title: MaKi Webentwicklung
-description: moderne  |  attractive  |  kreative  |  individuelle
+description: 
 email: marta@maki-webentwicklung.com
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
 menu:
-- {name: Dienstleistungen, url: '#dienstleistungen'}
-- {name: Projekte, url: '#projekte'}
+#- {name: Dienstleistungen, url: '#dienstleistungen'}
+#- {name: Projekte, url: '#projekte'}
 - {name: Über mich, url: '#ueber-mich'}
 - {name: Kontakt, url: '#kontakt'}
 - {name: Impressum, url: '#impressum'}

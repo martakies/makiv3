@@ -1,5 +1,7 @@
 <header class="bird-box">
 
+  <a href="/"><div class="logo"></div></a>
+
   <nav>
     <ul>
         {% for item in site.data.settings.menu %}
@@ -10,12 +12,20 @@
 
   <a id="i-nav" href="#"></a>
 
-  <h1>{{ site.data.settings.title }}</h1>
-  <a href="/"><div class="logo"></div></a>
-  <p class="kicker">{{ site.data.settings.description }}<br /> WEBSITES</p>
+
+
+      <h1>{{ site.data.settings.title }}</h1>
+
+      <p class="kicker">Webdesign, Corporate Design, Werbematerialien und Betreuung von Internetseiten </br>für Kleinunternehmen und Selbstständige</p>
+
+      <div class="buttons-header">
+        <a href="#dienstleistungen" class="button-first">Dienstleistungen</a>
+        <a href="#preise" class="button-second">Pakete & Preise</a>
+      </div>
+
   <div class="blink-element">
-    <p class="head-trigger">Dienstleistungen</p>
-    <div id="flip"><a href="#dienstleistungen"><img src="assets/img/arrow-down-header.svg" class="arrow-header"></a></div>
+    <p class="head-trigger">Projekte</p>
+    <div id="flip"><a href="#projekte"><img src="assets/img/arrow-down-header.svg" class="arrow-header"></a></div>
   </div>
 
 </header>
