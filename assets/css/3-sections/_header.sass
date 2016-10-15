@@ -5,6 +5,7 @@ header
     float: left
     margin: 10px 0 0 30px
     background-image: url(../img/logo-maki-sm.png)
+    position: relative
 
   nav
     float: right
@@ -48,6 +49,12 @@ header
       image: url(../img/hambourger-nav-x.svg) !important
     +transition
 
+  .header-text
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
   h1
     text-align: center
     font:
@@ -57,7 +64,7 @@ header
     letter-spacing: 0.05em
     margin-bottom: 20px
     clear: both
-    padding-top: 100px
+    //padding-top: 100px
     line-height: 80px
 
 
@@ -77,7 +84,7 @@ header
 
 .button-first
   background-color: #EEA913
-  opacity: 0.7
+  opacity: 1
   border: 2px solid #4D3A2C
   color: white
   padding: 15px 32px
@@ -92,7 +99,7 @@ header
   &:hover
     color: white
     background-color: #EEA913
-    opacity: 1
+    opacity: 0.7
 
 .button-second
   background-color: none
@@ -206,7 +213,7 @@ header
   h1
     text-align: center
     font:
-      size: 40px
+      size: 60px
       weight: 700
     color: white
     letter-spacing: 0.05em
@@ -221,9 +228,9 @@ header
 
   .kicker
     text-align: center
-    letter-spacing: 0.1em
+    letter-spacing: 0.04em
     color: white
-    line-height: 2.5
+    line-height: 1.5
     padding-top: 30px
     font-style: italic
     font-size: 24px
@@ -290,8 +297,8 @@ header
 @media (max-width: 1365px)
   .bird-box
     h1
-      font-size: 26px
-      padding: 5% 0 3% 0
+      font-size: 50px
+      padding: 0 0 3% 0
 
     .logo
       background-image: url(../img/logo-maki-sm.png)
@@ -299,7 +306,7 @@ header
 
     .kicker
       padding-top: 2%
-      font-size: 14px
+      font-size: 20px
 
 
 @media (max-width: 768px)
