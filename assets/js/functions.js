@@ -479,13 +479,7 @@ jQuery(document).ready(function($){
 //slidedown
 
 $(document).ready(function(){
-    $("#flip").click(function(){
-        $("#panel").slideDown("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#flip1").click(function(){
-        $("#panel").slideUp("slow");
+    $("button").click(function(){
+        $("#panel").fadeIn(3000);
     });
 });
