@@ -2,4 +2,4 @@
 title: Fresh It Up
 ---
 
-![Fresh It Up](assets/img/work/proj-5/dentallabor-v3.jpg)
+![FIRMEN WEBSITE - DENTAL-LABOR RICHARD MAYER](assets/img/work/proj-5/dentallabor-v3.jpg)
