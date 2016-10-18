@@ -1,5 +1,5 @@
 ---
-title: Fresh It Up
+title: DENTAL-LABOR Richard Mayer
 ---
 
-![Fresh It Up](assets/img/work/proj-5/freshitup-JieyuXiong.jpg)
+![Timeline Page](assets/img/work/proj-5/dentallabor-v3.jpg)

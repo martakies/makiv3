@@ -479,13 +479,13 @@ jQuery(document).ready(function($){
 //slidedown
 
 $(document).ready(function(){
-    $("#flip").click(function(){
-        $("#panel").slideDown("slow");
+    $("button").click(function(){
+        $("#panel").slideDown("1000");
     });
 });
 
 $(document).ready(function(){
     $("#flip1").click(function(){
-        $("#panel").slideUp("slow");
+        $("#panel").hide("1000");
     });
 });
