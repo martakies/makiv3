@@ -1,5 +1,5 @@
 ---
-title: Fresh It Up
+title: DENTAL-LABOR Richard Mayer
 ---
 
-![FIRMEN WEBSITE - DENTAL-LABOR RICHARD MAYER](assets/img/work/proj-5/dentallabor-v3.jpg)
+![Timeline Page](assets/img/work/proj-5/dentallabor-v3.jpg)

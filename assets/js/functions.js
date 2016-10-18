@@ -480,6 +480,12 @@ jQuery(document).ready(function($){
 
 $(document).ready(function(){
     $("button").click(function(){
-        $("#panel").fadeIn(3000);
+        $("#panel").slideDown("1000");
+    });
+});
+
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel").hide("1000");
     });
 });

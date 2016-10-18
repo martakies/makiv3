@@ -51,15 +51,14 @@ blurb: >
 # Work Section
 
 projects:
-- {name: Blog - Cooking the world, folder: 'proj-1', file: 'work/proj-1.html'}
+- {name: Entwurf - Dentallabor, folder: 'proj-5', file: 'work/proj-5.html'}
 - {name: Blog - Cooking the world v2, folder: 'proj-2', file: 'work/proj-2.html'}
-- {name: Firmen Website - Dental-Labor Richard Mayer, folder: 'proj-5', file: 'work/proj-5.html'}
+- {name: Blog - Cooking the world, folder: 'proj-1', file: 'work/proj-1.html'}
 #- {name: Corporate Design - Visitenkarten & Briefbogen, folder: 'proj-3', file: 'work/proj-3.html'}
 #- {name: Corporate Design - AutoWerbung, Grüstplane, folder: 'proj-4', file: 'work/proj-4.html'}
-#- {name: Fresh It Up, folder: 'proj-6', file: 'work/proj-6.html'}
-#- {name: Timeline Page, folder: 'proj-7', file: 'work/proj-7.html'}
-#- {name: Weather Dashboard, folder: 'proj-8', file: 'work/proj-8.html'}
-#- {name: Stripes & Co, folder: 'proj-9', file: 'work/proj-9.html'}
+#- {name: Timeline Page, folder: 'proj-6', file: 'work/proj-6.html'}
+#- {name: Weather Dashboard, folder: 'proj-7', file: 'work/proj-7.html'}
+#- {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
 
 
 
@@ -69,8 +68,8 @@ projects:
 
 clients:
 - {avatar: 'face-aaroni.jpg',
-  name: 'Scott Summers',
-  title: 'Director of Design, OnToText Ind.',
+  name: 'Heinz Kazmierczak',
+  title: 'Geschäftsfüher Heinz Malermeister',
   quote: '<p><strong>While we all felt that Travis was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often.</p>',
   logo: 'logo1.png'}
 - {avatar: 'face-atariboy.jpg',
